@@ -1,4 +1,8 @@
-// import { createAction } from '@reduxjs/toolkit'
+const { defaultCipherList } = require("constants");
 
-// const categoryClicked = createAction('category/categoryClicked')
-// let action = categoryClicked();
+ const CATEGORY_CLICKED = category => ({
+    type: 'CATEGORY_CLICKED',
+    payload: category
+    });
+    
+export default CATEGORY_CLICKED;

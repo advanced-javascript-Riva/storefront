@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -10,22 +10,32 @@ import Typography from '@material-ui/core/Typography';
 import beauty from '../assets/beauty.jpeg'
 import home from '../assets/home-decor.jpg'
 import food from '../assets/food.jpeg';
+import Grid from '@material-ui/core/Grid'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) =>({
   root: {
     maxWidth: 345,
+    flexGrow:1
   },
   media: {
     height: 140,
   },
-});
+  control: {
+    padding: theme.spacing(2),
+  },
+}));
 
 export default function MediaCard() {
   const classes = useStyles();
 
   return ( 
-    <>
-    <Card className={classes.root}>
+    
+    <Grid container spacing={4} direction="row"
+    justify="center"
+    alignItems="center"
+  >
+    <Grid item>
+    <Card className={classes.root} >
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -50,6 +60,8 @@ export default function MediaCard() {
         </Button>
       </CardActions>
     </Card>
+    </Grid>
+    <Grid item>
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -75,6 +87,8 @@ export default function MediaCard() {
         </Button>
       </CardActions>
     </Card>
+    </Grid>
+    <Grid item>
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -100,6 +114,7 @@ export default function MediaCard() {
         </Button>
       </CardActions>
     </Card>
-    </>
+    </Grid>
+    </Grid>
   );
 }
