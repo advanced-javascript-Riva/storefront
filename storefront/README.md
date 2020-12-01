@@ -1,7 +1,9 @@
-# storefront
+# storefront: An e-Commerce storefront created with React, Redux, and Material-UI coupled with my live API server
 
 ### Author: Riva Davidowski
 
+**Phase1:**
+In this first phase, my goal is to setup the basic scaffolding of the application with initial styling and basic behaviors. This initial build sets up the file structure and state management so that I can progressively build the app in a scalable manner.
 
 ### Dependencies:
 

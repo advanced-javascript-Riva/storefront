@@ -10,7 +10,7 @@ const App = () => {
         <Header/>
         <Footer/>
         <MediaCard/>
-        <div className="homeTitle">Electronics</div>
+        <div className="homeTitle">PRODUCTS</div>
         <div className="categoryDescription"></div>
       </header>
     </div>

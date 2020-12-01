@@ -25,7 +25,6 @@ export default function MediaCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/public/assets/beauty.jpeg"
           title="beauty products"
         />
         <CardContent>
