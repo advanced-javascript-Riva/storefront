@@ -1,4 +1,4 @@
-# storefront: An e-Commerce storefront created with React, Redux, and Material-UI coupled with my live API server
+## storefront: An e-Commerce storefront created with React, Redux, and Material-UI coupled with my live API server
 
 ### Author: Riva Davidowski
 
