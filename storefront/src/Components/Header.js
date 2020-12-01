@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <div className="navLinks">
             </div>
-            </div>
+        </div>
     )
 }
 export default Header;

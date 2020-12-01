@@ -32,7 +32,7 @@ export default function MediaCard() {
             Beauty
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            adkjfalkdjfalksdjf
+            Enter Text Here
           </Typography>
         </CardContent>
       </CardActionArea>
