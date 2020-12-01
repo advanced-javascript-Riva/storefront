@@ -11,6 +11,7 @@ In this first phase, my goal is to setup the basic scaffolding of the applicatio
 - To create a React application, run `npx create-react-app` (name of project here, all lowercase)
 - To install it globally, run `npm install -g create-react-app`
 - Install Material- UI for styling: `npm install @material-ui/core`
+- Install Redux: `npm i --save redux react-redux`
 
 
 ### Using the storefront App: Clone the repo and do an `npm i`. This will install create-react-app and all other dependencies needed for the project to run. Make sure you have Node.js installed and as listed below, to start the app, run `npm start` in the project directory.
