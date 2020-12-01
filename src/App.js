@@ -2,7 +2,7 @@ import MediaCard from './Components/Products';
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Links from './Components/Categories'
+import Links from './Components/Links'
 
 const App = () => {
   return (
