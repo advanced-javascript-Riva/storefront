@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 80px;
+    height: 90px;
     width: 100vw; 
     display: flex;
     background-repeat: no-repeat;
@@ -13,6 +13,20 @@
     position: bottom;
     bottom:0; left:0; right:0;
     margin-top: 60vh;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid gray;
+    box-shadow: 2px 3px 4px rgba(29, 28, 28, 0.25);
+    border-top: 1px solid gray;
+}
+
+.footerTitleContainer {
+    display:flex;
+    flex-direction:row;
+    align-items:left;
+    text-align:left;
+}
+.footerTitle {
+    font-size: 20px;
+
+}
+.footer {
+    font-size: 15px;
 }

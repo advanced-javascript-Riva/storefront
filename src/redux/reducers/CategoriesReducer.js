@@ -14,11 +14,6 @@ const Categories = (state = initialState, action) => {
             ...state,
             categories: action.payload
         }
-            // {
-            //     name: action.name,
-            //     display_name: action.display_name,
-            //     description: action.description
-            // }
         default: 
         return state;
     }

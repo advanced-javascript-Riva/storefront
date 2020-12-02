@@ -10,8 +10,8 @@ const App = () => {
       <header className="App-header">
         <Header/>
         <Links/>
+        <div className="homeTitle"></div>
         <MediaCard/>
-        <div className="homeTitle">PRODUCTS</div>
         <Footer/>
         <div className="categoryDescription"></div>
       </header>
