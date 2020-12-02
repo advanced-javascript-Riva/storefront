@@ -18,6 +18,8 @@ In this first phase, my goal is to setup the basic scaffolding of the applicatio
 
 ### UML:
 
+![storefront](storefront.png)
+
 
 **Getting Started with Create React App**
 

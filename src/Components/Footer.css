@@ -1,0 +1,32 @@
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 90px;
+    width: 100vw; 
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: bottom;
+    bottom:0; left:0; right:0;
+    margin-top: 60vh;
+    box-shadow: 2px 3px 4px rgba(29, 28, 28, 0.25);
+    border-top: 1px solid gray;
+}
+
+.footerTitleContainer {
+    display:flex;
+    flex-direction:row;
+    align-items:left;
+    text-align:left;
+}
+.footerTitle {
+    font-size: 20px;
+
+}
+.footer {
+    font-size: 15px;
+}

@@ -1,0 +1,30 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction:row;
+    border-bottom: 1px solid gray;
+    font-size: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    width: 100vw;
+    height: 20vh;
+}
+
+.title {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 30px;
+}
+.storeTitle {
+    text-align:left;
+    padding-right: 200px;
+
+}
+
+.browseCategories {
+    display:flex;
+    flex-direction: row;
+}

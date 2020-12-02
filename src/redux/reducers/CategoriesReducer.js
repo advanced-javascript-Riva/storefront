@@ -2,24 +2,20 @@
 // each category should have a normalized name, display name and desc
 // Create an action that will trigger the reducer to change active category
 // Update active category in reducer when action is dispatched
+import CATEGORY_CLICKED from '../actions/categoryClicked';
 
-import React from 'react';
-
-
-const Categories = (state = [], action) => {
+const initialState = {
+    categories: ['food', 'beauty', 'home-decor']
+}
+const Categories = (state = initialState, action) => {
     switch(action.type) {
-        case 'CATEGORY':
-        return [
+        case CATEGORY_CLICKED:
+        return {
             ...state,
-            {
-                name: action.name,
-                display_name: action.display_name,
-                description: action.description
-            }
-        ];
+            categories: action.payload
+        }
         default: 
         return state;
     }
 }
-
 export default Categories;
