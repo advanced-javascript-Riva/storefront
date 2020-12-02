@@ -3,7 +3,7 @@ import CATEGORY_CHANGED from '../actions/categoryClicked';
 const initialState = {
     products: []
 }
-const Products = (state = initialState, action) => {
+const ProductsReducer = (state = initialState, action) => {
     switch(action.type) {
         case CATEGORY_CHANGED:
         return {
@@ -14,4 +14,4 @@ const Products = (state = initialState, action) => {
         return state;
     }
 }
-export default Products;
+export default ProductsReducer;

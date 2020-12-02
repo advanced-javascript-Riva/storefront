@@ -3,6 +3,8 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Links from './Components/Links'
+import { connect } from 'react-redux';
+import store from './redux/store';
 
 const App = () => {
   return (
@@ -19,4 +21,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default connect((state) => state)(App);

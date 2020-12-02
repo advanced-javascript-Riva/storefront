@@ -3,11 +3,11 @@ import CategoriesReducer from './CategoriesReducer'
 import ProductsReducer from './ProductsReducer'
 import CartReducer from './CartReducer';
 
-const Reducer = combineReducers({
+const CombinedReducer = combineReducers({
     categories: CategoriesReducer,
     products: ProductsReducer,
     cart: CartReducer
 
 });
 
-export default Reducer;
+export default CombinedReducer;
