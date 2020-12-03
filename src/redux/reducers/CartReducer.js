@@ -1,5 +1,6 @@
-import ADD_PRODUCT from '../actions/addToCart';
+import ADD_PRODUCT from '../actions/AddToCart';
 import REMOVE_PRODUCT from '../actions/removeFromCart'
+import GET_ALL_PRODUCTS from '../actions/getAllProducts';
 
 const initialState = {
     cart: []
@@ -25,7 +26,7 @@ const CartReducer = (state = initialState, action) => {
     case REMOVE_PRODUCT:
     return {
     ...state,
-        cart: cart.filter(item => item.product.id !== action.payload.productId);
+        cart: cart.filter(item => item.product.id !== action.payload.productId)
 };
     default:
     return state;
