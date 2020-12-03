@@ -5,7 +5,6 @@ import beauty from '../assets/beauty.jpeg'
 import Grid from '@material-ui/core/Grid'
 import Card from './Card';
 
-
 const Products = props => {
 
   return (
