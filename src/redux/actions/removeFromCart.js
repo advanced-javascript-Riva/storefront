@@ -1,6 +1,10 @@
-const REMOVE_PRODUCT = product => ({
-    type: 'REMOVE_PRODUCT',
-    payload: product
-    });
+const REMOVE_PRODUCT = productId => {
+    return {
+        type: 'REMOVE_PRODUCT',
+        payload: {
+            productId: productId
+        }
+    }
+};
 
 export default REMOVE_PRODUCT;

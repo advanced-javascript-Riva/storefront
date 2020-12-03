@@ -2,8 +2,14 @@
 
 ### Author: Riva Davidowski
 
-**Phase1:**
+**Phase 1:**
 In this first phase, my goal is to setup the basic scaffolding of the application with initial styling and basic behaviors. This initial build sets up the file structure and state management so that I can progressively build the app in a scalable manner.
+
+**Phase 2:**
+In this phase, I add the “Add to Cart” feature to the application, which allows users to not only browse items in the store, but also select them and have them persist in their shopping cart for later purchase.
+
+**Phase 3:** 
+This phase involves connecting the store to an API to retrieve live data from a data source and using Thunk to enable asynchronous actions. For this phase, I connected my other app, APi-Server which can be backed by any data model.
 
 ### Dependencies:
 

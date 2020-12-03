@@ -7,7 +7,7 @@ import CATEGORY_CLICKED from '../actions/categoryClicked';
 const initialState = {
     categories: ['food', 'beauty', 'home-decor']
 }
-const Categories = (state = initialState, action) => {
+const CategoriesReducer = (state = initialState, action) => {
     switch(action.type) {
         case CATEGORY_CLICKED:
         return {
@@ -18,4 +18,4 @@ const Categories = (state = initialState, action) => {
         return state;
     }
 }
-export default Categories;
+export default CategoriesReducer;

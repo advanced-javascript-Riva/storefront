@@ -1,23 +1,35 @@
-import ADD_PRODUCT from '../actions/addToCart';
+import ADD_PRODUCT from '../actions/AddToCart';
 import REMOVE_PRODUCT from '../actions/removeFromCart'
+import GET_ALL_PRODUCTS from '../actions/getAllProducts';
 
 const initialState = {
-    products: []
+    cart: []
 };
-const addProduct = (state = initialState, action) =>{
+const CartReducer = (state = initialState, action) => {
+    let cart = state.cart;
     switch (action.type) {
     case ADD_PRODUCT:
+        cart.push(action.payload);
     return {
     ...state,
-       productToAdd: Object.assign({}, action.payload)
+       cart:cart
+    };
+    case GET_ALL_PRODUCTS:
+    let item = cart.find(item => item.product.id == action.payload.productId);
+    let newCart = cart.filter(item => item.product.id != action.payload.productId);
+    item.quantity = action.payload.quantity;
+    newCart.push(item);
+    return {
+        ...state,
+        cart: newCart
     };
     case REMOVE_PRODUCT:
     return {
     ...state,
-        productToRemove: Object.assign({}, action.payload)
+        cart: cart.filter(item => item.product.id !== action.payload.productId)
 };
     default:
     return state;
     }
 }
-export default addProduct;
+export default CartReducer;
