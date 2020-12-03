@@ -1,4 +1,4 @@
-import ADD_PRODUCT from '../actions/AddToCart';
+import ADD_PRODUCT from '../actions/addToCart';
 import REMOVE_PRODUCT from '../actions/removeFromCart'
 import GET_ALL_PRODUCTS from '../actions/getAllProducts';
 
@@ -15,8 +15,8 @@ const CartReducer = (state = initialState, action) => {
        cart:cart
     };
     case GET_ALL_PRODUCTS:
-    let item = cart.find(item => item.product.id == action.payload.productId);
-    let newCart = cart.filter(item => item.product.id != action.payload.productId);
+    let item = cart.find(item => item.product.id === action.payload.productId);
+    let newCart = cart.filter(item => item.product.id !== action.payload.productId);
     item.quantity = action.payload.quantity;
     newCart.push(item);
     return {
