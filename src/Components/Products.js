@@ -5,7 +5,9 @@ import beauty from '../assets/beauty.jpeg'
 import Grid from '@material-ui/core/Grid'
 import Card from './Card';
 
+
 const Products = props => {
+
   return (
 <Grid container spacing={4} direction="row"
       justify="center"

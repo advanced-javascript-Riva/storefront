@@ -1,7 +1,9 @@
-const REMOVE_PRODUCT = product => {
+const REMOVE_PRODUCT = productId => {
     return {
         type: 'REMOVE_PRODUCT',
-        payload: product
+        payload: {
+            productId: productId
+        }
     }
 };
 

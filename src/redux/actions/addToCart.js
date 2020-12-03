@@ -2,7 +2,10 @@
 const ADD_PRODUCT = product => {
     return {
         type: 'ADD_PRODUCT',
-        payload: product
+        payload: {
+            product,
+            quantity:1
+        }
     }
 };
 
